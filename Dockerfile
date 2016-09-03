@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 #Install general dependencies
 RUN apt-get -qq update -y
-RUN apt-get -qqinstall -y -q curl wget nodejs npm build-essential zip python-pip jq
+RUN apt-get -qq install -y -q curl wget nodejs npm build-essential zip python-pip jq
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 #Install latex, Roboto font, ghostscript
