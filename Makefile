@@ -1,4 +1,4 @@
-NS = blang
+NS = fermiumlabs
 REPO = latex 
 NAME = latex 
 VOLUMES = -v $PWD:/data
