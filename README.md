@@ -3,22 +3,30 @@ Latex docker container
 
 This container helps compiling latex sources without the need to install all latex packages on your system.
 
-Check out my [blog post](https://www.blang.io/posts/2015-04_docker-tooling-latex/).
+It includes the following packages and utilities
 
-Setup
------
+* Node.js 
+* Pandoc (latest stable)
+* Texlive full, from the Ubuntu Xenial repository
+* Zip 
+* Pandoc extensions:
+  * pandoc-fignos
+  * pandoc-eqnos
+  * pandoc-tablenos
+
+
 First, add your local user to docker group:
 ```bash
 sudo usermod -aG docker YOURUSERNAME
 ```
 
-Pull image ([from Hub](https://registry.hub.docker.com/u/blang/latex)):
+Pull image ([from Hub](https://registry.hub.docker.com/u/fermiumlabs/latex)):
 ```bash
-docker pull blang/latex
+docker pull fermiumlabs/latex
 ```
 or build:
 ```bash
-docker build -t blang/latex .
+docker build -t fermiumlabs/latex .
 
 ```
 

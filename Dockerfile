@@ -9,6 +9,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 #Install latex, Roboto font, ghostscript
 RUN apt-get -qq install -y ghostscript fonts-roboto texlive-full
+RUN pip install pandoc-fignos pandoc-eqnos pandoc-tablenos
 
 #Log what version of node we're running on
 RUN echo "node version $(node -v) running"
