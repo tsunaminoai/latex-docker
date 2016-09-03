@@ -3,12 +3,15 @@ MAINTAINER Fermium LABS srl <info@fermiumlabs.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 #Install general dependencies
-RUN apt-get -qq update -y
-RUN apt-get -qq install -y -q curl wget nodejs npm build-essential zip python-pip jq
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+RUN apt-get -qq -y update 
+RUN apt-get -qq -y install  -q curl wget npm build-essential zip python-pip jq
+RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh && chmod +x nodesource_setup.sh
+RUN ./nodesource_setup.sh
+RUN apt-get -qq -y install nodejs
+
 
 #Install latex, Roboto font, ghostscript
-RUN apt-get -qq install -y ghostscript fonts-roboto texlive-full
+RUN apt-get -qq -y install  ghostscript fonts-roboto texlive-full
 RUN pip install pandoc-fignos pandoc-eqnos pandoc-tablenos
 
 #Log what version of node we're running on
