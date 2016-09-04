@@ -35,13 +35,13 @@ docker build -t fermiumlabs/latex-docker .
 Make commands:
 
 ```bash
-make pull #pulls the docker container from the prebuilt public image
-make build #build the image from this github repository. long process
-make shell #allows you to interact with the container
-make run #runs the container and then destroys it
-make start #start the container
-make stop #stops the container
-make rm #removes the container
+make pull    #pulls the docker container from the prebuilt public image
+make build   #build the image from this github repository. long process
+make shell   #allows you to interact with the container
+make run     #runs the container and then destroys it
+make start   #start the container
+make stop    #stops the container
+make rm      #removes the container
 ```
 
 #Usage in Wercker CI
