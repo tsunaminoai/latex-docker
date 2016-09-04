@@ -5,6 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 #Install general dependencies
 RUN apt-get -qq -y update 
 RUN apt-get -qq -y install  -q curl wget npm build-essential zip python-pip jq
+
+#Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh && chmod +x nodesource_setup.sh
 RUN ./nodesource_setup.sh
 RUN apt-get -qq -y install nodejs
