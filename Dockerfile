@@ -19,7 +19,7 @@ RUN echo "node version $(node -v) running"
 RUN echo "npm version $(npm -v) running"
 
 #Download the latest version of pandoc and install it
-RUN wget `curl https://api.github.com/repos/jgm/pandoc/releases/latest | jq -r '.assets[] | .browser_download_url | select(endswith("deb"))'` -O pandoc.deb && sudo dpkg -i pandoc.deb && rm pandoc.deb
+RUN wget `curl https://api.github.com/repos/jgm/pandoc/releases/latest | jq -r '.assets[] | .browser_download_url | select(endswith("deb"))'` -O pandoc.deb && dpkg -i pandoc.deb && rm pandoc.deb
 
 WORKDIR /data
 VOLUME ["/data"]
