@@ -10,7 +10,7 @@ Includes the following packages and utilities:
 
 * Node.js 
 * Pandoc (latest stable)
-* Texlive full, from the Ubuntu Xenial repository
+* TexLive 2016 full automatically installed from the texlive repository
 * Zip 
 * Pandoc extensions:
   * pandoc-fignos
