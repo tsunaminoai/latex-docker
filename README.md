@@ -21,18 +21,15 @@ Includes the following packages and utilities:
 
 There are a few useful tags:
 * daily: Daily build from the texlive repository.
-* weekly: Weekly build from the texlive repository.
-* monthly: Monthly build from the texlive repository.
 * latest: Automated build from the master branch.
-* develop-latest: Automated build from the develop branch.
+* latest-develop: Automated build from the develop branch.
+
+Y
 
 Pull image ([from Hub](https://registry.hub.docker.com/u/fermiumlabs/latex)):
 
 ```bash
-docker pull fermiumlabs/latex-docker:daily
-docker pull fermiumlabs/latex-docker:weekly
-docker pull fermiumlabs/latex-docker:monthly
-
+docker pull fermiumlabs/latex-docker
 ```
 
 Or build:
