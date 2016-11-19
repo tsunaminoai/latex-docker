@@ -55,6 +55,6 @@ make rm      #removes the container
 Simply add as a first line this statement:
 
 ```
-box: fermiumlabs/latex-docker
+box: fermiumlabs/latex-docker:latest
 ```
  
