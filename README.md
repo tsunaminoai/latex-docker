@@ -2,7 +2,7 @@ Latex docker container
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/fermiumlabs/latex-docker.svg?maxAge=2592000)](https://hub.docker.com/r/fermiumlabs/latex-docker/) [![Docker Pulls](https://img.shields.io/docker/automated/fermiumlabs/latex-docker.svg?maxAge=2592000)](https://hub.docker.com/r/fermiumlabs/latex-docker/)  [![Docker Pulls](https://img.shields.io/docker/stars/fermiumlabs/latex-docker.svg?maxAge=2592000)](https://hub.docker.com/r/fermiumlabs/latex-docker/) [![](https://images.microbadger.com/badges/image/fermiumlabs/latex-docker.svg)](https://microbadger.com/images/fermiumlabs/latex-docker "Get your own image badge on microbadger.com")
 
-This container is intended to be used as a base image in CI builds of latex documentation. The image is rebuilt every day.
+This container is intended to be used as a base image in CI builds of latex documentation. The image is rebuilt every week automatically with the latest LaTex updates.
 
 ## Features
 
@@ -20,9 +20,8 @@ Includes the following packages and utilities:
 ## Usage
 
 There are a few useful tags:
-* daily: Daily build from the texlive repository.
-* latest: Automated build from the master branch.
-* latest-develop: Automated build from the develop branch.
+* latest: Automated build from the master branch, re-built (at least) every week with updated LaTex.
+* latest-develop: Automated build from the develop branch for testing purpose.
 
 
 Pull image ([from Hub](https://registry.hub.docker.com/u/fermiumlabs/latex)):
