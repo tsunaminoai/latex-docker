@@ -17,6 +17,7 @@ Includes the following packages and utilities:
   * pandoc-eqnos
   * pandoc-tablenos
 
+
 ## Usage
 
 There are a few useful tags:
@@ -24,7 +25,7 @@ There are a few useful tags:
 * latest-develop: Automated build from the develop branch for testing purpose.
 
 
-Pull image ([from Hub](https://registry.hub.docker.com/u/fermiumlabs/latex)):
+Pull image ([from Hub](https://hub.docker.com/r/fermiumlabs/latex-docker/)):
 
 ```bash
 docker pull fermiumlabs/latex-docker
