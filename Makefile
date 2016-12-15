@@ -1,9 +1,12 @@
-NS = blang
-REPO = latex 
-NAME = latex 
+NS = fermiumlabs
+REPO = latex-docker
+NAME = latex
 VOLUMES = -v $PWD:/data
 
 .PHONY: build shell run start stop stoprm rm
+
+pull:
+	docker pull $(NS)/latex-docker
 
 build:
 	docker build -t $(NS)/$(REPO) .
