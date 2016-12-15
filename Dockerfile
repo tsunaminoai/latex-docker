@@ -1,6 +1,8 @@
 FROM ubuntu:xenial
+
 MAINTAINER Fermium LABS srl <info@fermiumlabs.com>
 ENV HOME /root
+
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install general dependencies
