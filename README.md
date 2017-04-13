@@ -59,4 +59,9 @@ Simply add as a first line this statement:
 ```
 box: fermiumlabs/latex-docker:latest
 ```
- 
+---
+
+<a href="https://twitter.com/intent/user?screen_name=fermiumlabs">
+    <img src="https://img.shields.io/twitter/follow/fermiumlabs.svg?style=social&label=Follow" alt="Follow Fermium LABS on Twitter" align="right" />
+</a>
+
