@@ -1,12 +1,12 @@
 FROM ubuntu:xenial
 
-MAINTAINER Fermium LABS srl <info@fermiumlabs.com>
+MAINTAINER TsunamiNoAi
 ENV HOME /root
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install general dependencies
-RUN apt-get -qq -y update 
+RUN apt-get -qq -y update
 RUN apt-get -qq -y install curl wget npm build-essential zip python-pip jq git libfontconfig
 
 # Install nodejs
@@ -30,7 +30,7 @@ ENV PATH /usr/local/texlive/2016/bin/x86_64-linux:$PATH
 RUN tlmgr update --self --all
 
 # Test Latex
-RUN wget ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex 
+RUN wget ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex
 RUN latex  small2e.tex
 RUN xelatex small2e.tex
 

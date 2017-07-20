@@ -1,4 +1,4 @@
-NS = fermiumlabs
+NS = tsunami
 REPO = latex-docker
 NAME = latex
 VOLUMES = -v $PWD:/data
